@@ -20,7 +20,7 @@
 %\documentclass[smallextended]{svjour3}       % onecolumn (second format)
 \documentclass[twocolumn]{svjour3}          % twocolumn
 %
-\smartqed  % flush right qed marks, e.g. at end of proof
+\smartqed  % flush right qed marks, e.g., at end of proof
 %
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
@@ -43,7 +43,7 @@
 
 % TODOS: =========================================
 % KILIAN: affmark, affaddr, wasn't defined and I'm not sure about it's purpose, so I'm
-% filling this in for now: 
+% filling this in for now:
 % (copied from https://tex.stackexchange.com/questions/9594/)
 \newcommand*{\affaddr}[1]{#1} % No op here. Customize it for different styles.
 \newcommand*{\affmark}[1][*]{\textsuperscript{#1}}
@@ -206,7 +206,7 @@ sudhir.malik@upr.edu\\
 
 
 %%%%%%%%%%%%%
-%\author{Sudhir Malik     \and     
+%\author{Sudhir Malik     \and
 %       Samuel Meehan  \and
 %        Kilian Lieret \and
 %       Meirin Oan Evans \and
@@ -214,9 +214,9 @@ sudhir.malik@upr.edu\\
 %        Daniel S. Katz \and
 %        Graeme A. Stewart \and
 %        Peter  Elmer    \and
-%        David  Chamont 
-%        
-%        
+%        David  Chamont
+%
+%
 %        %%%%mmmmm
 %}
 
@@ -247,15 +247,15 @@ Particle physics in the coming decades will continue to explore the fundamental 
 %
 \section{Organisation }\label{sec:Organisation}
 %
-The HSF Training working group, led by three co-conveners, engages with different experimental collaborations and initiatives such as IRIS-HEP, FIRST-HEP and the Software Carpentries. The training group has weekly public meetings~\cite{HSF-training-meetings} to plan and assess progress. This is where ideas and proposals are discussed and events planned. The meeting is held remotely using Zoom  and life notes are maintained for anyone unable to join. Training events are announced via several email lists; registrations and timetables are organized with  Indico~\cite{HSF-training-events}. 
+The HSF Training working group, led by three co-conveners, engages with different experimental collaborations and initiatives such as IRIS-HEP, FIRST-HEP and the Software Carpentries. The training group has weekly public meetings~\cite{HSF-training-meetings} to plan and assess progress. This is where ideas and proposals are discussed and events planned. The meeting is held remotely using Zoom  and life notes are maintained for anyone unable to join. Training events are announced via several email lists; registrations and timetables are organized with  Indico~\cite{HSF-training-events}.
 
 The style and pedagogy of the training is heavily inspired by The Carpentries.
-The training is student-centric, suitable for self-study and experiment agnostic, with reusable study material that is open source and hosted in repositories of the HSF Training GitHub organization~\cite{HSF-training-materials}. We encourage that participants provide feedback and suggestions for improvement by opening issues in these repositories or directly help with the development by opening pull requests. 
+The training is student-centric, suitable for self-study and experiment agnostic, with reusable study material that is open source and hosted in repositories of the HSF Training GitHub organization~\cite{HSF-training-materials}. We encourage that participants provide feedback and suggestions for improvement by opening issues in these repositories or directly help with the development by opening pull requests.
 In most cases the training material is in the form of a website that is built from simple Markdown files that are easy to edit with very little training. The corresponding training webpage is automatically built using the static site generator Jekyll via github-pages and a template from The Carpentries.
-All lessons are listed in the HSF Training Center~\cite{HSF-curriculum} which is the student facing overview of the available training modules. 
+All lessons are listed in the HSF Training Center~\cite{HSF-curriculum} which is the student facing overview of the available training modules.
 
 Based on our experiences in the past, we have also formalized the procedure to organize  a training event and have compiled our knowledge in a compact guide~\cite{HSF-training-how-to}.
-As organization is all about dividing work, we distinguish between three relevant roles at our events: 
+As organization is all about dividing work, we distinguish between three relevant roles at our events:
 \begin{itemize}
     \item \emph{Instructors} are subject-matter experts, develop training material and finally teach it (either in person, in recorded live sessions or by recording videos before the event).  Instructors are the primary academic drivers of the program at large and provide guidance to mentors and students alike. They gain experience in curriculum design with a focus on optimizing pedagogy for all learning styles.
     \item \emph{Mentors} work closely with participants, for example by conducting small group mentoring sessions with ideally only five students per mentor. They optimize the learning environment for individual participants and help them persevere.  They are critical to the success of any event and through participation as a mentor not only serve the community, but develop pedagogical communication skills that are transferable to other aspects of their research/teaching portfolio.
@@ -268,7 +268,7 @@ Finally, there are Blueprint workshops~\cite{HSF-training-blueprint} and hack\-a
 
 \section{Curriculum}\label{sec:Curriculum}
 
-An initial survey of software and training needs of the HEP community was conducted in February of 2019 \cite{david_lange}. This was followed by development of ``prototype'' course modules and  pilot training events from which feedback from participants was solicited concerning the course content.
+An initial survey of software and training needs of the HEP community was conducted in February of 2019 \cite{david_lange}. This was followed by development of \enquote{prototype} course modules and  pilot training events from which feedback from participants was solicited concerning the course content.
 Based on the surveys and the experiences gathered at the events, the course structure was extended into a full curriculum.
 Each training module is independent from the others (but for some clearly marked requirements), such that students can prioritize certain skills before others. This is especially important in academia because students are often expected to directly work towards scientific results with minimal time given for acquiring software knowledge or best practices.
 
@@ -280,26 +280,26 @@ A lesson on machine learning and a lesson specifically targeting machine learnin
 
 Finally development is ongoing for modules that cover advanced topics that are important for students striving to become core developers such as code documentation, performance optimization and parallel programming.
 
-The module list and the material evolves continuously depending on the input from participants and person-power available; it is open source and welcomes merge requests from any interested stakeholders. 
+The module list and the material evolves continuously depending on the input from participants and person-power available; it is open source and welcomes merge requests from any interested stakeholders.
 The entry barrier required to contribute to the material is fairly low, as all lessons are written in the easy-to-learn Markdown format, so only knowledge of git is required to contribute.
 
 \section{Training}\label{sec:Training}
 
-During the initial period of training, 150 people received \enquote{introductory} software skills training at Fermilab (FNAL), Argonne National Lab (ANL), Lawrence Berkeley Lab (LBNL), and CERN~\cite{HSF-training-SC-FNAL-2019,HSF-training-ATLAS-ANL-2019,HSF-training-ATLAS-LBNL-2019,HSF-training-SC-CERN-2019}. And at the CoDaS-HEP school (\href{http://codas-hep.org/}{codas-hep.org}), over 50 people received more advanced ``computing bootcamp'' training. National labs are the hub of the HEP community and provide an environment where it is easier to reach a diverse population of participants with good infrastructure for in-person training.  However, the COVID-19 pandemic necessitated rapid adjustment to virtual platforms that evolved throughout the course of 2020 as we gained experience. [TODO: Maybe add some of the first online trainings here, like docker, C++ etc.] 
+During the initial period of training, 150 people received \enquote{introductory} software skills training at Fermilab (FNAL), Argonne National Lab (ANL), Lawrence Berkeley Lab (LBNL), and CERN~\cite{HSF-training-SC-FNAL-2019,HSF-training-ATLAS-ANL-2019,HSF-training-ATLAS-LBNL-2019,HSF-training-SC-CERN-2019}. And at the CoDaS-HEP school (\href{http://codas-hep.org/}{codas-hep.org}), over 50 people received more advanced \enquote{computing bootcamp} training. National labs are the hub of the HEP community and provide an environment where it is easier to reach a diverse population of participants with good infrastructure for in-person training.  However, the COVID-19 pandemic necessitated rapid adjustment to virtual platforms that evolved throughout the course of 2020 as we gained experience. [TODO: Maybe add some of the first online trainings here, like docker, C++ etc.]
 
-To date, nearly 100 educators have taught over 1000 participants in about a dozen training events. 
+To date, nearly 100 educators have taught over 1000 participants in about a dozen training events.
 
-Valuable lessons have been learnt regarding in-person and virtual training. While in-person training limits participants to a few dozen due to costs, and a long lead time for planning logistics of travel, room booking, and space constraints, it also offers opportunities for active and efficient engagement of participants and community building. However, this can also make in-person training a bit exclusive. Participants need extra preparation time to travel to the venue. Hosts have to book specially arranged/equipped rooms with multiple projectors and screens to simultaneously project teaching materials and slides. Our in-person events have been managed by around five educators to allow for the ``hands-on'' aspect to be successful, and need a large commitment of their time as well; they cannot just present their material and leave.
+Valuable lessons have been learnt regarding in-person and virtual training. While in-person training limits participants to a few dozen due to costs, and a long lead time for planning logistics of travel, room booking, and space constraints, it also offers opportunities for active and efficient engagement of participants and community building. However, this can also make in-person training a bit exclusive. Participants need extra preparation time to travel to the venue. Hosts have to book specially arranged/equipped rooms with multiple projectors and screens to simultaneously project teaching materials and slides. Our in-person events have been managed by around five educators to allow for the \enquote{hands-on} aspect to be successful, and need a large commitment of their time as well; they cannot just present their material and leave.
 
 On the other hand, virtual training events allow for a broader reach of participant attendance with registrations upwards of 300 for single events.  These events are a considerably more equitable service to the community by allowing individuals to participate fully in the event regardless of funding, given that there are no travel costs. Furthermore, because the teaching materials are fully preserved via lesson creation and YouTube videos beforehand, an inability to attend during the scheduled time does not considerably degrade learning.  Finally, these video materials are captioned to ensure inclusivity to those with hearing impairments, which itself is considerably more economical when comparing the cost of a hired sign language interpreter ($\sim$\$1000/day) to that of captioning videos for a week-long event ($\sim$\$50/day). Organizationally, the lead time to plan a training is reduced considerably due to reduced logistics (e.g., room booking is not needed).
 
-The disadvantage, however, is that it is difficult for educators and participants to interact closely - you just can’t recreate the in-person environment on Zoom. Educators and participants have to plan and resolve in the best possible way their spread across time zones. It is also challenging to keep everyone engaged and on the same page due to the pervasive culture of ``multi-tasking'' within HEP. Due to this issue, although initial registration for these events are very high, the actual attendance at these events is typically only 50\% of those who have registered. This is attributed to the combination of reduced barriers and the widespread desire to engage in this training, but an institutional culture that dedicated professional development is not something that should detract from research time and so standard activities are typically prioritized instead.  However, it should be noted that this does not mean that there is a lesser degree of learning occurring at the training event. Tools like Mattermost, discord, and Slack have been effectively deployed for asynchronous communication, both during and after the event. 
+The disadvantage, however, is that it is difficult for educators and participants to interact closely - you just can’t recreate the in-person environment on Zoom. Educators and participants have to plan and resolve in the best possible way their spread across time zones. It is also challenging to keep everyone engaged and on the same page due to the pervasive culture of \enquote{multi-tasking} within HEP. Due to this issue, although initial registration for these events are very high, the actual attendance at these events is typically only 50\% of those who have registered. This is attributed to the combination of reduced barriers and the widespread desire to engage in this training, but an institutional culture that dedicated professional development is not something that should detract from research time and so standard activities are typically prioritized instead.  However, it should be noted that this does not mean that there is a lesser degree of learning occurring at the training event. Tools like Mattermost, discord, and Slack have been effectively deployed for asynchronous communication, both during and after the event.
 
 There is very clear and detailed guidance for anyone willing to host, request or organize a training while staying aligned with the approach, philosophy and code of conduct of the HSF-Training group so as to make the tools and techniques that are developed persistent, reuseable, and broadly accessible. If the community has new ideas on training modules, suggestions and improvements, there are opportunities to discuss them at the weekly training meetings and brainstorming sessions.
 %
 \section{Feedback}\label{sec:Feedback}
 %
-Feedback is required for us to evaluate if we are effectively facilitating learning and to ensure the success of future training. Every training has a pre- and post- survey to collect self-reported feedback from the participants. They include a set of baseline questions pertaining to demographics and questions to assess the quality and method of training. These questions can be adapted to the nature and topic of each training. Additionally, it has become the status-quo to organize a ``post-mortem planning'' session among the educators to discuss the successes and failures of the training activity. This typically occurs after completion of the results of the post- (and pre-) workshop surveys, which guide the discussion. Finally, a short presentation about this training experience is presented at the HSF-Training weekly meeting and/or at the HSF all-working-groups planning meeting. Figure \ref{fig:dockerfeedback} shows feedback on a training event involving containerization with Docker~\cite{HSF-training-Docker-2020}.  It is clear that training made a difference to the skills researchers had.  However, we have recognized that this type of a ``learning evaluation'' does not fully encompass the impact that our training has on the research community, as it only probes the perceived and self-reported learning of a skill.  Instead, what is needed is a survey that is conducted at a date sufficiently later than the training to understand whether the learned skill is being applied in the research context. 
+Feedback is required for us to evaluate if we are effectively facilitating learning and to ensure the success of future training. Every training has a pre- and post- survey to collect self-reported feedback from the participants. They include a set of baseline questions pertaining to demographics and questions to assess the quality and method of training. These questions can be adapted to the nature and topic of each training. Additionally, it has become the status-quo to organize a \enquote{post-mortem planning} session among the educators to discuss the successes and failures of the training activity. This typically occurs after completion of the results of the post- (and pre-) workshop surveys, which guide the discussion. Finally, a short presentation about this training experience is presented at the HSF-Training weekly meeting and/or at the HSF all-working-groups planning meeting. Figure \ref{fig:dockerfeedback} shows feedback on a training event involving containerization with Docker~\cite{HSF-training-Docker-2020}.  It is clear that training made a difference to the skills researchers had.  However, we have recognized that this type of a \enquote{learning evaluation} does not fully encompass the impact that our training has on the research community, as it only probes the perceived and self-reported learning of a skill.  Instead, what is needed is a survey that is conducted at a date sufficiently later than the training to understand whether the learned skill is being applied in the research context.
 %
 \begin{figure*}
 \centering
@@ -310,12 +310,12 @@ Feedback is required for us to evaluate if we are effectively facilitating learn
 %
 \section{Community}\label{sec:Community}
 %
-The solutions to future computing challenges require a large workforce trained in a wide range of software skills. In order to train this workforce we rely on an active community whose members are enthusiastic and motivated to teach. Our members include people with various roles and backgrounds in HEP, such as experimental physicists from different collaborations, as well as software engineers from different institutes. As we scale our training activities, we also have members from Nuclear Physics and Computer Science as well. The members of The~Carpentries~\cite{carpentries} organisation teach part of our very basic curriculum by an agreement via membership subscription through IRIS-HEP~\cite{iris-hep}. The overall diversity of the background of the instructors and mentors adds a great value to the training. Each educator brings their own flavor of experience from a different computing environment with a common goal to create, teach, and sustain a common set of software skills. 
+The solutions to future computing challenges require a large workforce trained in a wide range of software skills. In order to train this workforce we rely on an active community whose members are enthusiastic and motivated to teach. Our members include people with various roles and backgrounds in HEP, such as experimental physicists from different collaborations, as well as software engineers from different institutes. As we scale our training activities, we also have members from Nuclear Physics and Computer Science as well. The members of The~Carpentries~\cite{carpentries} organisation teach part of our very basic curriculum by an agreement via membership subscription through IRIS-HEP~\cite{iris-hep}. The overall diversity of the background of the instructors and mentors adds a great value to the training. Each educator brings their own flavor of experience from a different computing environment with a common goal to create, teach, and sustain a common set of software skills.
 
-As the success of our mission depends crucially on the motivation of the community, we cultivate a strong sense of community ownership and pay special care to acknowledge contributions of all kinds. We also encourage the participants of our trainings to get active, share feedback and in particular to sign up to be a mentor in one of the next training sessions of the same training module. If former participants still feel insecure about their mentoring abilities, we also offer them to match with a more senior mentor. In the same way, we encourage mentors to become instructors or facilitators and to become more and more active in our organization. By actively engaging participants and educators in this way and including them throughout the training community, we aim to sustainably nurture a culture of intentional learning and grow the community in an organic fashion~\cite{hsf-community-building}. 
-However, as we scale up training activities in the near future we need to find even more creative ways to incentivize contributions. 
+As the success of our mission depends crucially on the motivation of the community, we cultivate a strong sense of community ownership and pay special care to acknowledge contributions of all kinds. We also encourage the participants of our trainings to get active, share feedback and in particular to sign up to be a mentor in one of the next training sessions of the same training module. If former participants still feel insecure about their mentoring abilities, we also offer them to match with a more senior mentor. In the same way, we encourage mentors to become instructors or facilitators and to become more and more active in our organization. By actively engaging participants and educators in this way and including them throughout the training community, we aim to sustainably nurture a culture of intentional learning and grow the community in an organic fashion~\cite{hsf-community-building}.
+However, as we scale up training activities in the near future we need to find even more creative ways to incentivize contributions.
 
-Educators do not only provide an invaluable service to the HEP community, but also get the opportunity to develop and sharpen their pedagogical skills and enhance their professional portfolio. About two-thirds of the HEP workforce eventually works outside of HEP, such as in the software industry and in data science. The training makes a meaningful difference in the preparation for such careers in terms of software knowledge and experience, and enhances the chance of employability for both the educators and participants. The skills taught and learnt, like Python, Machine Learning, Data Analysis align with the needs of the software industry and strengthen the job profile of a physicist to work in industry. At the same time, recognising the importance of software skills within HEP may hopefully help to provide more incentives and clearer career paths in academia to those who want to pursue their career within HEP, or in other scientific research fields. In particular, strengthening the research software engineer career path could significantly increase the number of much needed software experts in the HEP community. 
+Educators do not only provide an invaluable service to the HEP community, but also get the opportunity to develop and sharpen their pedagogical skills and enhance their professional portfolio. About two-thirds of the HEP workforce eventually works outside of HEP, such as in the software industry and in data science. The training makes a meaningful difference in the preparation for such careers in terms of software knowledge and experience, and enhances the chance of employability for both the educators and participants. The skills taught and learnt, like Python, Machine Learning, Data Analysis align with the needs of the software industry and strengthen the job profile of a physicist to work in industry. At the same time, recognising the importance of software skills within HEP may hopefully help to provide more incentives and clearer career paths in academia to those who want to pursue their career within HEP, or in other scientific research fields. In particular, strengthening the research software engineer career path could significantly increase the number of much needed software experts in the HEP community.
 
 \section{Sustainability}\label{sec:Sustainability}
 
@@ -323,9 +323,9 @@ Sustainable software \cite{dan_katz}  gives HEP software developers an important
 
 To be able to lead software training across HEP and related communities over the long run, we must focus on building a community of individuals who are instructors, mentors, facilitators and participants (learners).  At the center must be a core team (supported directly by the HEP community for a long term) whose main focus is to support the overall mission of HEP software training. To achieve this, we need to build regional and local mentorship and leadership to train HEP communities that are guided and supported by the core team. Specifically, while we have started the following set of activities, we need to scale up by:
 
-\begin{itemize} 
- 
-\item Engaging more HEP labs, institutes, and universities in this endeavour. 
+\begin{itemize}
+
+\item Engaging more HEP labs, institutes, and universities in this endeavour.
 \item Promote equity, diversity, inclusion and accessibility in participation across HEP communities and  be mindful of under-resourced institutions in different geographical regions.
 \item Establish a mechanism to get feedback from our communities and improve the training.
 \item Ensure that our core team and volunteers are afforded opportunities to grow professionally and have career paths.
@@ -400,9 +400,9 @@ This work is supported in part by National Science Foundation Cooperative Agreem
 %\end{acknowledgements}
 
 
-% Authors must disclose all relationships or interests that 
-% could have direct or potential influence or impart bias on 
-% the work: 
+% Authors must disclose all relationships or interests that
+% could have direct or potential influence or impart bias on
+% the work:
 %
 % \section*{Conflict of interest}
 %
@@ -432,4 +432,3 @@ This work is supported in part by National Science Foundation Cooperative Agreem
 
 \end{document}
 % end of file template.tex
-
