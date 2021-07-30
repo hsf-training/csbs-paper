@@ -13,7 +13,7 @@ only used for an easier to browse history of changes.
 ## Previewing the PDF
 
 Since the latest commits you can also retrieve the compiled PDF for each commit:
-Click on the checkmark next to a commit, then on `Details` next to `Build LaTeX document / build_latex`
+Click on the checkmark/cross next to a commit, then on `Details` next to `Build LaTeX document / build_latex`
 and then on `Artifacts` > `PDF` on the top right.
 
 ![Screenshot 1](readme_assets/scrot_01.png)
