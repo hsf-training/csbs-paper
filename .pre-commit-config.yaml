@@ -13,7 +13,6 @@ repos:
     hooks:
     -   id: codespell
         args: ["-I", "codespell.txt"]
-        exclude: '.*\.sty|license\.md|.*\.bst|.*\.cls|codespell.txt'
 - repo: https://github.com/jonasbb/pre-commit-latex-hooks
   rev: v1.1.0
   hooks:
@@ -22,6 +21,8 @@ repos:
   - id: csquotes
   - id: no-space-in-cite
   - id: ensure-labels-for-sections
+
+exclude: '.*\.sty|.*\.bst|.*\.cls|codespell.txt'
 
 ci:
     autoupdate_schedule: monthly
