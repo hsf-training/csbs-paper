@@ -25,12 +25,14 @@ before_percent = 100*(before / before.sum())
 after_percent = 100*(after / after.sum())
 width=0.35
 hsf_red = "#C02F2C"
+hsf_red_light = "#DC6865"
 im = plt.imread("hsf_logo_angled.png")
 
 # +
 fig, ax = plt.subplots()
+# plt.rcParams.update({'hatch.color': "white"})
 bar_before = ax.bar(xs-width/2, before_percent, width=width, label="Before training", color="k")
-bar_after = ax.bar(xs+width/2, after_percent, width=width, label="After training", color=hsf_red)
+bar_after = ax.bar(xs+width/2, after_percent, width=width, label="After training", color=hsf_red_light, linewidth=1, edgecolor=hsf_red)
 for n, rect in zip(before, bar_before):
     height = rect.get_height()
     if n > 0:
@@ -58,10 +60,10 @@ ax.legend(frameon=False)
 ax.set_ylabel("Percent of participants")
 ax.set_title("How do you rate your knowledge and abilities when using Docker?\n")
 
-newax = fig.add_axes([0.65, 0.55, 0.18, 0.18], anchor='NE')
+newax = fig.add_axes([0.68, 0.55, 0.18, 0.18], anchor='NE')
 newax.imshow(im)
 newax.axis('off')
 
-fig.savefig("dockerfeedback_new.pdf")
+fig.savefig("dockerfeedback_new.pdf", dpi=300)
 fig.savefig("dockerfeedback_new.png", dpi=200)
 # -
