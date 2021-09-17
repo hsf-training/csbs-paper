@@ -14,15 +14,15 @@ pushd $(git rev-parse --show-toplevel)
 
 # Check out old version of paper and copy it to new file
 git checkout $1
-cp main.tex _main.tex
+cp main.tex old.tex
 
 # Go back to current version
 git checkout main
 
 # Generate diff
-latexdiff _main.tex main.tex > diff.tex
+latexdiff old.tex main.tex > diff.tex
 
-# Build
+# Build diff.pdf
 mkdir -p build
 pdflatex --output-directory build diff.tex
 bibtex build/diff
@@ -30,8 +30,15 @@ pdflatex --output-directory build diff.tex
 bibtex build/diff
 pdflatex --output-directory build diff.tex
 
+# Build old.pdf
+pdflatex --output-directory build old.tex
+bibtex build/old
+pdflatex --output-directory build old.tex
+bibtex build/old
+pdflatex --output-directory build old.tex
+
 # Remove old version
-rm _main.tex
+rm old.tex
 rm diff.tex
 
 # Jump back to the directory that we started from
