@@ -16,6 +16,13 @@ pushd $(git rev-parse --show-toplevel)
 git checkout $1
 cp main.tex old.tex
 
+# Build old.pdf
+pdflatex --output-directory build old.tex
+bibtex build/old
+pdflatex --output-directory build old.tex
+bibtex build/old
+pdflatex --output-directory build old.tex
+
 # Go back to current version
 git checkout main
 
@@ -29,13 +36,6 @@ bibtex build/diff
 pdflatex --output-directory build diff.tex
 bibtex build/diff
 pdflatex --output-directory build diff.tex
-
-# Build old.pdf
-pdflatex --output-directory build old.tex
-bibtex build/old
-pdflatex --output-directory build old.tex
-bibtex build/old
-pdflatex --output-directory build old.tex
 
 # Remove old version
 rm old.tex
