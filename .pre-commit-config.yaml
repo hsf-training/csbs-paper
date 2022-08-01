@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.3.0
     hooks:
     -   id: check-added-large-files
     -   id: check-case-conflict
@@ -14,7 +14,7 @@ repos:
     -   id: codespell
         args: ["-I", "codespell.txt"]
 - repo: https://github.com/jonasbb/pre-commit-latex-hooks
-  rev: v1.2.5
+  rev: v1.3.0
   hooks:
   - id: american-eg-ie
   - id: cleveref-capitalization
